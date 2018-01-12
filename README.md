@@ -1,14 +1,14 @@
-#Criando componentes realmente reutilizaveis com React
+# Criando componentes realmente reutilizaveis com React
 
 Quando estamos trabalhando com React o principio da REUSABILIDADE se torna praticamente um mantra para ter em mente durante todo o desenvolvimento, isso porque ganhamos muito em produtividade e escalabilidade da aplicação além de outros beneficios. Componentes reutilizáveis são a chave para um projeto bem construido em React, devemos pensar no menor e mais generico componente possível para que a partir dele, os componentes maiores e mais complexos sejam construídos.
 
-###SmallComponent + AnotherSmallComponent = BigComponent
+### SmallComponent + AnotherSmallComponent = BigComponent
 
 Vamos pensar numa tela de login, que deve possuir os campos e-mail, senha e um botão "Fazer Login". Neste caso quando 'quebramos' nosso componente maior (que é esse formulário de login) em pequenas partes, chegaremos nos dois menores componentes: um input e um button.
 
-####Input
+#### Input
 
-`js
+```js
 import React from 'react'
 
 import PropTypes from 'prop-types'
@@ -35,11 +35,11 @@ Input.propTypes = {
 */
 
 export default Input
-`
+```
 
-####Button
+#### Button
 
-`js
+```js
 import React from 'react'
 
 import PropTypes from 'prop-types'
@@ -62,10 +62,10 @@ Button.propTypes = {
 }
 
 export default Button
-`
+```
 E a construção de um componente maior ficaria assim:
 
-`js
+```js
 import React, { Component } from 'react'
 
 import Input from '../components/input'
@@ -103,6 +103,6 @@ class Home extends Component {
 }
 
 export default Home
-`
+```
 
 Temos nosso exemplo de código reutilizável seguindo o 'mantra' de criação de componentes em React, então cada vez que precisarmos utilizar um desses componentes em nosso projeto não teremos que reescrever código,sendo assim nossa aplicação fica extremamente escalável e como dito antes ganhamos muito na produtividade além de um código confiável.
