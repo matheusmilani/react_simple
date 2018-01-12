@@ -105,4 +105,4 @@ class Home extends Component {
 export default Home
 ```
 
-Temos nosso exemplo de código reutilizável seguindo o 'mantra' de criação de componentes em React, então cada vez que precisarmos utilizar um desses componentes em nosso projeto não teremos que reescrever código,sendo assim nossa aplicação fica extremamente escalável e como dito antes ganhamos muito na produtividade além de um código confiável.
+Temos nosso exemplo de código reutilizável seguindo o 'mantra' de criação de componentes em React, então cada vez que precisarmos utilizar um desses componentes em nosso projeto não teremos que reescrever código, sendo assim nossa aplicação fica extremamente escalável e como dito antes ganhamos muito na produtividade além de um código confiável.
